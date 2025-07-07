@@ -1,0 +1,8 @@
+nums = [3,4,1,5,2]
+for a in range(len(nums)):
+    min_ind = a
+    for b in range(a+1, len(nums)):
+        if nums[b]<nums[min_ind]:
+            min_ind = b
+    nums[a],nums[min_ind] = nums[min_ind],nums[a]
+print(nums)
